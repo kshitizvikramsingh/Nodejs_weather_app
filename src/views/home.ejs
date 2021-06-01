@@ -1,0 +1,27 @@
+<%- include("/KTZ Web Dev/Web-Server/src/views/partials/head") %>
+<div class="main-content"> 
+    <h1 >Welcome to the Weather App!</h1>
+    <img src="https://static.thenounproject.com/png/967229-200.png">
+    <p>Enter a location to get real-time weather info!</p>
+    <form class="main-content" action="/weather">
+        <input id="loc" name="address"type="text"  placeholder="location" aria-label="Username" aria-describedby="basic-addon1">
+        
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+
+    <h2 class="main-content" id="msg-1"></h2>
+    <h2 class="main-content" id="msg-2"></h2>
+   
+    
+
+
+
+</div> 
+<hr class="footer">
+<h4 class="footer">Created by Kshitiz Vikram Singh</h4>
+    
+ 
+    <script src="fetch.js"></script>
+</body>
+</html>
